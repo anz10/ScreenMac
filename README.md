@@ -18,7 +18,7 @@ ScreenMac runs in the menu bar and supports macOS 14 or later on Apple silicon a
 
 ## Download and build
 
-I’m publishing the source code first. I’m not offering the supplied 1.10 DMG as an installer yet: I couldn’t verify the app inside it, and macOS didn’t trust the app in the accompanying Xcode archive. To provide an installer for everyday use, I need to rebuild and sign the app with an Apple Developer ID certificate, then submit it to Apple for notarization.
+I’m publishing the source code, not a ready-to-install app. Before I can offer a download that opens normally on other Macs, I need to sign the app with an Apple Developer ID certificate and have Apple notarize the build.
 
 For now, you can build ScreenMac yourself with Xcode 15 or later using the instructions below.
 
@@ -64,7 +64,7 @@ No license is provided. The source is public for inspection, but this project do
 
 ### Скачать и собрать
 
-Сначала я публикую исходный код. DMG версии 1.10 пока не предлагаю как установщик: проверить приложение внутри него мне не удалось, а macOS не сочла доверенным приложение из Xcode-архива. Чтобы подготовить установщик для обычной установки, мне нужно заново собрать приложение, подписать сертификатом Apple Developer ID и отправить его Apple на нотариализацию.
+Сейчас я публикую исходный код, а не готовый установщик. Чтобы приложение можно было скачивать и запускать на других Mac обычным способом, мне нужно подписать сборку сертификатом Apple Developer ID и отправить её Apple на нотариализацию.
 
 Пока вы можете собрать ScreenMac в Xcode 15 или новее: откройте `ScreenMac.xcodeproj`, выберите схему **ScreenMac** и устройство **My Mac**, укажите свою команду для локальной подписи и запустите приложение через `⌘R`.
 
