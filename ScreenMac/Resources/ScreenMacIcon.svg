@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">ScreenMac</title>
+  <desc id="desc">A bright annotation arrow inside a screenshot selection frame on a deep blue Mac app icon.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172759"/>
+      <stop offset="0.48" stop-color="#3546AA"/>
+      <stop offset="1" stop-color="#117EBC"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.72" cy="0.72" r="0.75">
+      <stop offset="0" stop-color="#67D9F0" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#67D9F0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arrow" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF77A3"/>
+      <stop offset="0.52" stop-color="#FF9B69"/>
+      <stop offset="1" stop-color="#FFE28B"/>
+    </linearGradient>
+    <clipPath id="tile">
+      <rect x="44" y="44" width="936" height="936" rx="218"/>
+    </clipPath>
+  </defs>
+
+  <rect x="44" y="54" width="936" height="936" rx="218" fill="#09152D" opacity="0.22"/>
+  <rect x="44" y="44" width="936" height="936" rx="218" fill="url(#base)"/>
+  <g clip-path="url(#tile)">
+    <rect x="44" y="44" width="936" height="936" fill="url(#glow)"/>
+    <path d="M44 44H980V336C829 373 708 271 537 205C360 135 214 146 44 254Z" fill="#FFFFFF" opacity="0.075"/>
+    <path d="M113 852C319 707 467 754 615 821C754 884 884 895 980 829V980H44Z" fill="#083E8A" opacity="0.27"/>
+  </g>
+  <rect x="46" y="46" width="932" height="932" rx="216" fill="none" stroke="#DCEEFF" stroke-opacity="0.28" stroke-width="4"/>
+
+  <!-- Four capture corners remain legible at small menu and Dock sizes. -->
+  <g fill="none" stroke="#ECF8FF" stroke-width="51" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M278 414V294Q278 278 294 278H414"/>
+    <path d="M610 278H730Q746 278 746 294V414"/>
+    <path d="M746 610V730Q746 746 730 746H610"/>
+    <path d="M414 746H294Q278 746 278 730V610"/>
+  </g>
+
+  <!-- A warm mark points from the selected image toward its upper right. -->
+  <path d="M365 665L656 374" fill="none" stroke="#172759" stroke-opacity="0.27" stroke-width="90" stroke-linecap="round"/>
+  <path d="M365 665L656 374" fill="none" stroke="url(#arrow)" stroke-width="72" stroke-linecap="round"/>
+  <path d="M548 374H656V482" fill="none" stroke="url(#arrow)" stroke-width="72" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="365" cy="665" r="35" fill="#FF7C9D"/>
+</svg>
