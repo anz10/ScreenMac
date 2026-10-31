@@ -1,6 +1,6 @@
-# ScreenMac 1.10
+# ScreenMac 1.10 — source release
 
-First public source release of ScreenMac, a native macOS screenshot app.
+I’m sharing the source code for ScreenMac 1.10. ScreenMac is a menu bar app for macOS 14 and later that lets you select a screen region, annotate it, and copy or save it as PNG.
 
 ### Features
 
@@ -9,4 +9,4 @@ First public source release of ScreenMac, a native macOS screenshot app.
 - Copy the result to the clipboard or save as PNG.
 - Configure a global shortcut and optional launch at login.
 
-Requires macOS 14 or later. The DMG checksum is valid, but its contents could not be inspected in this environment; the app bundle in the accompanying Xcode archive fails Gatekeeper's trust assessment. Treat the installer as unverified. Publish a ready-to-install DMG only after signing with Developer ID and notarizing it.
+The supplied 1.10 DMG passed its checksum check, but I couldn’t verify the app inside it. The app in the accompanying Xcode archive also failed macOS Gatekeeper’s trust check, so I’m not offering the DMG as an installer. A ready-to-install build needs a new Developer ID signature and Apple notarization. For now, build ScreenMac from source with Xcode 15 or later.

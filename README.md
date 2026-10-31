@@ -16,9 +16,11 @@ ScreenMac runs in the menu bar and supports macOS 14 or later on Apple silicon a
 - Copy the finished image to the clipboard or save it as PNG.
 - Optionally launch at login.
 
-## Download
+## Download and build
 
-The 1.10 DMG supplied with the source archive has a valid disk image checksum. The app bundle in the accompanying Xcode archive does not pass Gatekeeper's trust assessment, and the DMG contents could not be inspected in this environment. Treat the DMG as unverified. A public installer should be rebuilt, signed with an Apple Developer ID certificate, and notarized before it is offered as a ready-to-install download. Until then, build ScreenMac from source using the instructions below.
+I’m publishing the source code for now. I’m not offering the supplied 1.10 DMG as an installer: its checksum is valid, but I couldn’t verify the app inside it. The app in the accompanying Xcode archive also failed macOS Gatekeeper’s trust check. Before I offer a ready-to-install download, I need to rebuild the app, sign it with an Apple Developer ID certificate, and have Apple notarize it.
+
+For now, you can build ScreenMac yourself with Xcode 15 or later using the instructions below.
 
 ## Build from source
 
@@ -60,9 +62,11 @@ No license is provided. The source is public for inspection, but this project do
 - Копирование результата в буфер обмена или сохранение в PNG.
 - Необязательный запуск при входе в систему.
 
-### Скачать или собрать
+### Скачать и собрать
 
-DMG версии 1.10 из исходного архива прошёл проверку контрольной суммы. Приложение из приложенного Xcode-архива не прошло проверку доверия Gatekeeper, а содержимое DMG в этой среде проверить не удалось, поэтому установщик считаем непроверенным. Перед публикацией готового установщика нужно пересобрать приложение, подписать сертификатом Apple Developer ID и нотариализовать. Пока этого нет, соберите приложение из исходников: откройте `ScreenMac.xcodeproj` в Xcode 15 или новее, выберите схему **ScreenMac** и устройство **My Mac**, укажите свою команду для локальной подписи и запустите через `⌘R`.
+Пока я публикую только исходный код. DMG версии 1.10 из архива я не предлагаю как готовый установщик: файл прошёл проверку контрольной суммы, но проверить приложение внутри него мне не удалось. Приложение из Xcode-архива также не прошло проверку доверия Gatekeeper. Чтобы распространять готовый установщик, мне нужно пересобрать приложение, подписать его сертификатом Apple Developer ID и пройти нотариализацию Apple.
+
+Пока вы можете собрать ScreenMac в Xcode 15 или новее: откройте `ScreenMac.xcodeproj`, выберите схему **ScreenMac** и устройство **My Mac**, укажите свою команду для локальной подписи и запустите приложение через `⌘R`.
 
 При первом снимке разрешите запись экрана в **Системные настройки → Конфиденциальность и безопасность → Запись экрана и системного аудио**. При необходимости завершите и снова запустите приложение. Идентификатор приложения — `com.anatoliyzyk.ScreenMac`.
 
