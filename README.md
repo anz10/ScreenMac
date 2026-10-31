@@ -42,7 +42,7 @@ ScreenMac stays in the menu bar and does not show in the Dock. Use the camera me
 
 ## License
 
-The project license has not been selected yet. Until a license is added, the source is public for inspection, but reuse, modification, and redistribution are not granted.
+No license is provided. The source is public for inspection, but this project does not grant permission to reuse, modify, or redistribute it.
 
 ---
 
@@ -70,4 +70,4 @@ DMG версии 1.10 из исходного архива прошёл пров
 
 ### Лицензия
 
-Лицензия проекта ещё не выбрана. Пока она не добавлена, исходный код доступен для просмотра, но право на его повторное использование, изменение и распространение не предоставляется.
+Лицензия не предоставляется. Исходный код открыт для просмотра, но повторное использование, изменение и распространение не разрешены.
